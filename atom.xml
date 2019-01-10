@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Random Precision</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-01-08T13:27:37.568Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Mickardinal</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随机精准</title>
+    <link href="http://yoursite.com/2019/01/08/random-precision/"/>
+    <id>http://yoursite.com/2019/01/08/random-precision/</id>
+    <published>2019-01-08T12:25:27.000Z</published>
+    <updated>2019-01-08T13:27:37.568Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/mickardinal/randomprecision_img/master/PINK%20FLOYD-%E5%AE%9E%E9%AA%8C%E9%9F%B3%E4%B9%90%E4%B8%8E%E8%A7%86%E8%A7%89%E8%89%BA%E6%9C%AF%E7%9A%84%E5%AE%8C%E7%BE%8E%E8%9E%8D%E5%90%88%20-%20%E7%9F%A5%E4%B9%8E%E4%B8%93%E6%A0%8F.jpg" alt="Pink Floyd"></p><p>开博第一篇，按照惯例应该写一写踩到的坑以及测试markdown的显示效果。</p><h2 id="关于此博客"><a href="#关于此博客" class="headerlink" title="关于此博客"></a>关于此博客</h2><p>这个博客兼有作品集网站的用途，博客的名字「随机精准(random precision)」来源于英国摇滚乐队Pink Floyd第七张专辑《Wish You Were Here》的第一首歌《Shine on You Crazy Diamond (Parts 1-5)》。</p><blockquote><p>You wore out your welcome with random precision. Rode on the steel breeze.</p></blockquote><p>关于这句话的解读很多，有人认为这和乐队创始人Syd Barrett离开前的最后一作《Have You Got It Yet?》有关，也有人把它当作是对Syd Barrett癫狂状态的写照。但这段纠葛往事暂且按下不表，「Random Precision」，两个互斥的概念，正如「Steel Breeze」，或「像寒冰一样火热，像烈火一样寒冷」一类的表述，充满矛盾，又不免令人联想到一种非同寻常的奇妙状态。如此，已经足够支撑起一个博客的名字了。</p><h2 id="踩到的坑"><a href="#踩到的坑" class="headerlink" title="踩到的坑"></a>踩到的坑</h2><p>博客用了Hexo，主题则是<a href="http://html5up.net/" target="_blank" rel="noopener">HTML5 UP</a>设计的Phantom。后者使用了SCSS，因此需要通过npm安装<code>hexo-renderer-scss</code>。<br>Hexo本身非常简单易用，安装过程中除了npm的连接状态非常不稳定之外（后来改用了cnpm）没有遇到别的问题。</p><h2 id="测试markdown"><a href="#测试markdown" class="headerlink" title="测试markdown"></a>测试markdown</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Post</span><span class="params">(db.Model)</span>:</span></span><br><span class="line">    __tablename__ = <span class="string">'post'</span></span><br><span class="line">    id = db.Column(db.Integer, primary_key=<span class="keyword">True</span>)</span><br><span class="line">    body = db.Column(db.String(<span class="number">140</span>))</span><br><span class="line">    timestamp = db.Column(db.DateTime, index=<span class="keyword">True</span>, default=datetime.utcnow)</span><br><span class="line">    user_id = db.Column(db.Integer, db.ForeignKey(<span class="string">'user.id'</span>))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'&lt;Post &#123;&#125;&gt;'</span>.format(self.body)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mickardinal/randomprecision_img/master/PINK%20FLOYD-%E5%AE%9E%E9%AA%8C%E9%9F%B3%E4%B9%90%E4%B
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
